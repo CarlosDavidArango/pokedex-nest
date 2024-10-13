@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe } from '@nestjs/common';
 import { SeedService } from './seed.service';
 
 
@@ -8,9 +8,9 @@ export class SeedController {
 
  
 
-  @Get()
-  executeSeed() {
-    return this.seedService.executeSeed();
+  @Get(':number')
+  executeSeed( @Param('number', ParseIntPipe) number: number) {
+    return this.seedService.executeSeed(number);
   }
 
  

@@ -13,6 +13,7 @@ import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
         schema: PokemonSchema
       }
     ])
-  ]
+  ],
+  exports: [PokemonService, MongooseModule]
 })
 export class PokemonModule {}

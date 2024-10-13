@@ -20,5 +20,9 @@ npm i -g @nest/cli
 ```
 docker-compose up -d
 ```
+4.Correr semilla
+```
+localhost:3000/api/v1/seed/200
+```
 
 ````
