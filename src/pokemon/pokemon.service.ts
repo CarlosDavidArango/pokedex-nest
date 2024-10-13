@@ -93,6 +93,6 @@ export class PokemonService {
       throw new NotFoundException('Pokemon not found');
     }
     return result
-    // return pokemon ;
+
   }
 }
