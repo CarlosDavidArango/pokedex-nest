@@ -10,11 +10,12 @@ async function bootstrap() {
       whitelist: true,
       forbidNonWhitelisted: true,
       transform: true,
-      transformOptions: {
+      transformOptions: { //transforma los valores de los query params a los tipos de datos especificados en los DTO
         enableImplicitConversion: true
       }
     }
   ));
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
+  console.log(`Application is running on port ${process.env.PORT}`);
 }
 bootstrap();

@@ -24,5 +24,7 @@ docker-compose up -d
 ```
 localhost:3000/api/v1/seed/200
 ```
+5. colar el archivo __.env.template__ y renombrarlo a __.env__ y llenar variables de entorno
+
 
 ````
